@@ -4,7 +4,7 @@
   align-items: center;
   width: 800px;
   background-color: #dcc9f4;
-  padding: 20px;
+  padding: 20px 0;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -26,7 +26,7 @@
   position: relative;
   width: 800px;
   height: 800px;
-  padding: 20px;
+  padding: 20px 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
