@@ -70,9 +70,9 @@
 
 #bottom-child02 {
   position: relative;
-  margin-left: 200px;
+  left: 200px;
 }
 #bottom-child03 {
   position: relative;
-  margin-left: 400px;
+  left: 400px;
 }
