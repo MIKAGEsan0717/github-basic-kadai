@@ -30,16 +30,18 @@ main {
 
 #parent {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
 .contents {
-  border: solid 3px rgb(238, 204, 204);
   flex-basis: 25%;
+  border: 3px solid rgb(238, 204, 204);
   padding: 10px 15px;
   margin: 20px 0px;
-  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
 }
 
 h2::before {
@@ -64,7 +66,7 @@ footer {
   background-color: rgb(244, 79, 79);
   text-align: center;
 }
-.kasa {
+.contents p:nth-of-type(2)::first-letter {
   font-weight: bold;
   color: rgb(97, 206, 249);
 }
@@ -81,13 +83,10 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  h2 {
-    font-size: 30px;
+  #parent {
+    flex-direction: column; /* 縦並び */
   }
-  p {
-    font-size: 25px;
-  }
-  div {
-    display: block;
+  .contents {
+    flex-basis: 100%;
   }
 }
